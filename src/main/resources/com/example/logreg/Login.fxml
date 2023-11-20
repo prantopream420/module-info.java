@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="508.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.logreg.Login">
+   <children>
+      <TextField fx:id="username" alignment="CENTER" layoutX="281.0" layoutY="274.0" promptText="Username" style="-fx-border-color: #118edc;" />
+      <PasswordField fx:id="password" alignment="CENTER" layoutX="281.0" layoutY="314.0" promptText="Password" style="-fx-border-color: #118edc;" />
+      <Button layoutX="332.0" layoutY="359.0" mnemonicParsing="false" onAction="#onLoginClick" style="-fx-border-color: #118edc; -fx-background-color: #ceedff; -fx-border-radius: 3;" text="Login" textFill="#1490d9" />
+      <Label layoutX="313.0" layoutY="214.0" style="-fx-background-color: 1111;" text="Login" textFill="#118edc">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="294.0" layoutY="405.0" text="Don't have an Account?" />
+      <Hyperlink layoutX="331.0" layoutY="422.0" onAction="#switchToReg" text="Register" />
+
+      <Text fill="#c92222" layoutX="192.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Railway Ticketing online portal">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+
+
+   </children>
+</AnchorPane>
